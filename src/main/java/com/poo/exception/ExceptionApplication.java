@@ -10,9 +10,8 @@ public class ExceptionApplication {
 		SpringApplication.run(ExceptionApplication.class, args);
 		
 		Exercicio4 exercicio = new Exercicio4();
-		exercicio.exercicio();
+	exercicio.ex4();
 	
-	
-	}
 	
 }
+ }

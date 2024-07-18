@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Exercicio4 extends Exception {
 
-void exercicio () throws Personalizada{ 
-
+void ex4() { 
 
  Scanner sc = new Scanner(System.in);
 boolean opcao = true;
@@ -25,46 +24,31 @@ for (int i = 0; i < nomes.size(); i++) {
 }
 
 
-int indexEscolhido = -1;
+int nome = -1;
 
 try {
-  
     System.out.print("Escolha o índice do nome desejado: ");
-    indexEscolhido = sc.nextInt();
-  
-
-
-    if (indexEscolhido >= 0 && indexEscolhido < nomes.size()) {
-        System.out.println("Nome escolhido: " + nomes.get(indexEscolhido));
-       
+    nome = sc.nextInt();
+    if (nome >= 0 && nome < nomes.size()) {
+        System.out.println("Nome escolhido: " + nomes.get(nome));   
         opcao = false;
-    } else {
-        System.out.println("Erro: Índice inválido. Escolha um índice válido.");
-      
     
     }  
 } 
-
 catch (InputMismatchException e) {
     System.out.println("Erro: por favor, digite um número inteiro válido.");
     System.out.println( "Parte do Erro:");
     e.printStackTrace();
-   
-
-
 } finally {
     
     sc.nextLine(); 
    
 }
 } while (opcao);
-
-    
 }
 public class Personalizada extends Exception{
     public Personalizada(String mensagem){
         super(mensagem);
     }
-    }
-
-}
+ }
+ }
