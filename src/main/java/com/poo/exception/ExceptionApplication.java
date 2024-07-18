@@ -9,8 +9,8 @@ public class ExceptionApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ExceptionApplication.class, args);
 		
-		Exercicio exercicio = new Exercicio();
-		exercicio.ex1();
+		Exercicio4 exercicio = new Exercicio4();
+		exercicio.exercicio();
 	
 	
 	}
